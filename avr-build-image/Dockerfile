@@ -11,4 +11,3 @@ VOLUME /build
 WORKDIR /build
 # ENTRYPOINT ["/usr/bin/make"]
 ENTRYPOINT ["/usr/bin/make"]
-CMD ["--help"]
