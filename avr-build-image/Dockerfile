@@ -9,5 +9,3 @@ RUN apt-get update && apt-get install gcc-avr avrdude binutils-avr avr-libc cmak
 RUN mkdir /build
 VOLUME /build
 WORKDIR /build
-# ENTRYPOINT ["/usr/bin/make"]
-ENTRYPOINT ["/usr/bin/make"]
