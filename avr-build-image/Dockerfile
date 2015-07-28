@@ -9,3 +9,4 @@ RUN apt-get update && apt-get install gcc-avr avrdude arduino-core binutils-avr 
 RUN mkdir /build
 VOLUME /build
 WORKDIR /build
+ENV ARDUINO_SDK_PATH=/usr/share/arduino 
