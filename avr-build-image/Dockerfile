@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install gcc-avr avrdude wget xz-utils binutils-avr
 
 WORKDIR /opt
 RUN wget http://downloads.arduino.cc/arduino-1.6.5-linux64.tar.xz
-RUN tar xvf arduino-1.6.5-linux64.tar.xz
+RUN tar xf arduino-1.6.5-linux64.tar.xz
 RUN mkdir /build
 VOLUME /build
 WORKDIR /build
