@@ -2,8 +2,8 @@ FROM debian:jessie
 MAINTAINER Falko Zurell <falko.zurell@gmail.com>
 
 ENV VERSION 8
-ENV UPDATE 45
-ENV BUILD 14
+ENV UPDATE 77
+ENV BUILD 03
 
 ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
 # Java 8 URL: http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz
