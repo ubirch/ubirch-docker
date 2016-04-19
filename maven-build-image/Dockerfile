@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install maven -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir /build && mkdir /maven-repo
+RUN umask 000
 VOLUME /build /maven-repo
 WORKDIR /build
 ENV JAVA_HOME /usr
