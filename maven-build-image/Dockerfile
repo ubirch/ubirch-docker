@@ -6,11 +6,11 @@ RUN apt-get update && apt-get install maven -y && \
     apt-get autoclean && apt-get --purge -y autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN mkdir /build && mkdir /maven-repo
 RUN useradd -m -d /home/maven -s /bin/bash maven
 RUN echo "umask 000" >> /etc/profile 
 RUN echo "umask 000" >> /home/maven/.bashrc
 USER maven
+RUN mkdir /build && mkdir /maven-repo
 VOLUME /build /maven-repo
 WORKDIR /build
 ENV JAVA_HOME /usr
