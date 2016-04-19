@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install maven -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir /build && mkdir /maven-repo
-RUN useradd -m -d /home/maven /s /bin/bash maven
+RUN useradd -m -d /home/maven -s /bin/bash maven
 RUN echo "umask 000" >> /etc/profile 
 RUN echo "umask 000" >> /home/maven/.bashrc
 USER maven
