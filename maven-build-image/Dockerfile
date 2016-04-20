@@ -2,7 +2,7 @@ FROM ubirch/java:v8
 MAINTAINER Falko Zurell <falko.zurell@gmail.com>
 
 LABEL description="uBirch Maven build container"
-RUN apt-get update && apt-get install maven -y && \
+RUN apt-get update && apt-get install maven git -y && \
     apt-get autoclean && apt-get --purge -y autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
