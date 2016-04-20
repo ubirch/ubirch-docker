@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ubirch/java:v8
 MAINTAINER Falko Zurell <falko.zurell@gmail.com>
 
 LABEL description="uBirch Maven build container"
