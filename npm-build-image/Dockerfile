@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:latest
 MAINTAINER Falko Zurell <falko.zurell@ubirch.com>
 
 LABEL description="uBirch Maven build container"
